@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { tmdbApi } from "../api/tmdbApi";
 import { Movie } from "../types/movie";
 import MovieCard from "../components/MovieCard";
-import "../styles/HomePage.css";
 
 const HomePage: React.FC = () => {
   const [popularMovies, setPopularMovies] = useState<Movie[]>([]);
